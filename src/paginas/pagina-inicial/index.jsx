@@ -3,6 +3,8 @@ import Menu from "../../componentes/menu";
 import styles from "./PaginaInicial.module.scss";
 import Banner from "../../componentes/banner";
 import Rodape from "../../componentes/rodape";
+import Galeria from "../../componentes/galeria";
+import Populares from "../../componentes/populares";
 
 const PaginaInicial = () => {
     return(
@@ -13,6 +15,10 @@ const PaginaInicial = () => {
                     <Menu />
                     <Banner />
                 </section>
+                <div className={styles.galeria}>
+                    <Galeria />
+                    <Populares />
+                </div>
             </main>
             <Rodape />
         </>
